@@ -66,3 +66,6 @@ Output:
 Explanation: 
 There is no address in the address table for the personId = 1 so we return null in their city and state.
 addressId = 1 contains information about the address of personId = 2.
+
+We perform a left join on the Person x Address table so all records of Person table is returned.
+For cases where address is not present the Person table row is still returned and the address table row shows null.
